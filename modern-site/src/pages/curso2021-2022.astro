@@ -1,0 +1,278 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<Layout title="Curso 2021/2022 - Energía en Acción" description="Proyectos de impacto social realizados durante el curso 2021/2022 con estudiantes de ESO, Bachillerato y FP">
+  <Header />
+
+  <!-- Hero Section -->
+  <section class="relative py-20 bg-gradient-to-br from-green-600 to-green-800 text-white overflow-hidden">
+    <div class="absolute inset-0 bg-black opacity-20"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <div class="inline-block bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+          Septiembre 2021 - Junio 2022
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+          Curso 2021/2022
+        </h1>
+        <p class="text-xl md:text-2xl leading-relaxed max-w-4xl mx-auto mb-8">
+          Año de expansión con estudiantes de <strong>ESO, Bachillerato y Formación Profesional</strong> 
+          trabajando en proyectos de impacto social durante la pandemia
+        </p>
+        <div class="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto text-center">
+          <div class="bg-white bg-opacity-20 rounded-xl p-4">
+            <div class="text-2xl font-bold">25+</div>
+            <div class="text-sm opacity-90">Proyectos</div>
+          </div>
+          <div class="bg-white bg-opacity-20 rounded-xl p-4">
+            <div class="text-2xl font-bold">5</div>
+            <div class="text-sm opacity-90">Centros</div>
+          </div>
+          <div class="bg-white bg-opacity-20 rounded-xl p-4">
+            <div class="text-2xl font-bold">150+</div>
+            <div class="text-sm opacity-90">Estudiantes</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Innovations -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Innovaciones del Curso</h2>
+        <p class="text-xl text-gray-600">
+          Adaptaciones y mejoras implementadas durante la pandemia
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Metodología Híbrida</h3>
+          <p class="text-gray-600">
+            Combinación de actividades presenciales y remotas, adaptándose a las circunstancias de la pandemia
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Diversidad Educativa</h3>
+          <p class="text-gray-600">
+            Primera vez incluyendo estudiantes de ESO y Bachillerato además de Formación Profesional
+          </p>
+        </div>
+
+        <div class="text-center">
+          <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-4">Impacto Digital</h3>
+          <p class="text-gray-600">
+            Proyectos enfocados en soluciones digitales para problemas sociales emergentes post-COVID
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Educational Levels -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Niveles Educativos</h2>
+        <p class="text-xl text-gray-600">
+          Ampliamos nuestro impacto a diferentes etapas educativas
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <div class="text-center mb-6">
+            <div class="w-20 h-20 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-10 h-10 text-red-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">ESO</h3>
+            <div class="text-gray-500 text-sm mb-4">12-16 años</div>
+          </div>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Proyectos de sensibilización social
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Introducción a metodologías ágiles
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Trabajo en equipo
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <div class="text-center mb-6">
+            <div class="w-20 h-20 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-10 h-10 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Bachillerato</h3>
+            <div class="text-gray-500 text-sm mb-4">16-18 años</div>
+          </div>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Proyectos de investigación social
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Análisis de datos y estadística
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Presentaciones profesionales
+            </li>
+          </ul>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <div class="text-center mb-6">
+            <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-10 h-10 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-3">Formación Profesional</h3>
+            <div class="text-gray-500 text-sm mb-4">18+ años</div>
+          </div>
+          <ul class="space-y-3 text-gray-600">
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Proyectos profesionales completos
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Mentoría directa con profesionales
+            </li>
+            <li class="flex items-center">
+              <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+              </svg>
+              Demo Day con organizaciones
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact During COVID -->
+  <section class="py-20 bg-blue-600 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-4">Impacto Durante la Pandemia</h2>
+        <p class="text-xl opacity-90">
+          Cómo adaptamos nuestro programa para mantener el impacto social
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Adaptaciones Clave</h3>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center mr-4 mt-0.5">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Mentoría Virtual</h4>
+                <p class="opacity-90">Sesiones online con mentores internacionales</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center mr-4 mt-0.5">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Proyectos Digitales</h4>
+                <p class="opacity-90">Soluciones tecnológicas para problemas post-COVID</p>
+              </div>
+            </div>
+            <div class="flex items-start">
+              <div class="w-6 h-6 bg-blue-400 rounded-full flex items-center justify-center mr-4 mt-0.5">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+              </div>
+              <div>
+                <h4 class="font-semibold mb-2">Colaboración Híbrida</h4>
+                <p class="opacity-90">Equipos trabajando de forma presencial y remota</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white bg-opacity-10 rounded-2xl p-8">
+          <h3 class="text-2xl font-bold mb-6">Resultados Destacados</h3>
+          <div class="grid grid-cols-2 gap-6">
+            <div class="text-center">
+              <div class="text-3xl font-bold mb-2">95%</div>
+              <div class="text-sm opacity-90">Estudiantes completaron sus proyectos</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold mb-2">30+</div>
+              <div class="text-sm opacity-90">Organizaciones beneficiadas</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold mb-2">85%</div>
+              <div class="text-sm opacity-90">Satisfacción de mentores</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold mb-2">12</div>
+              <div class="text-sm opacity-90">Países con mentores</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

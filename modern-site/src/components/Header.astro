@@ -1,0 +1,151 @@
+---
+---
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/" class="flex items-center space-x-3">
+          <img 
+            class="h-12 w-auto" 
+            src="/images/energianaccion-logo-1.svg" 
+            alt="Energía en Acción"
+          />
+        </a>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-8">
+          <a href="#que-hacemos" class="text-gray-600 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors">
+            ¿Qué hacemos?
+          </a>
+          
+          <!-- Dropdown Cambio Climático -->
+          <div class="relative group">
+            <button class="text-gray-600 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors inline-flex items-center">
+              Cambio Climático
+              <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-56 bg-white shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="py-1">
+                <a href="http://escogetuenergia.com" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">
+                  Escogetuenergia.com
+                </a>
+                <a href="http://yoahorro.org" target="_blank" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">
+                  Yoahorro.org
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dropdown Proyectos -->
+          <div class="relative group">
+            <button class="text-gray-600 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors inline-flex items-center">
+              Proyectos con Estudiantes
+              <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-56 bg-white shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              <div class="py-1">
+                <a href="/cortos" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">
+                  2017 Cortos sociales
+                </a>
+                <a href="/marketing" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">
+                  Curso 2017/18 FP
+                </a>
+                <a href="/curso2018-2019" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">
+                  Curso 2018/19 FP
+                </a>
+                <a href="/curso2019-2020" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">
+                  Curso 2019/20 FP
+                </a>
+                <a href="/curso2020-2021" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">
+                  Curso 2020/21 FP y ESO
+                </a>
+                <a href="/curso2021-2022" class="block px-4 py-2 text-sm text-gray-700 hover:bg-green-50 hover:text-green-600">
+                  Curso 2021/22 ESO, BAT y FP
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="/partners" class="text-gray-600 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors">
+            Partners
+          </a>
+          <a href="#nosotros" class="text-gray-600 hover:text-green-600 px-3 py-2 text-sm font-medium transition-colors">
+            Nosotros
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a 
+          href="https://saturdays.typeform.com/to/NtmGk30X" 
+          target="_blank"
+          class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors inline-flex items-center space-x-2"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+          </svg>
+          <span>ÚNETE</span>
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button 
+          type="button" 
+          class="mobile-menu-button text-gray-600 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500 p-2 rounded-md"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Abrir menú principal</span>
+          <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu hidden md:hidden">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+        <a href="#que-hacemos" class="text-gray-600 hover:text-green-600 block px-3 py-2 text-base font-medium">
+          ¿Qué hacemos?
+        </a>
+        <a href="#nosotros" class="text-gray-600 hover:text-green-600 block px-3 py-2 text-base font-medium">
+          Nosotros
+        </a>
+        <a href="/partners" class="text-gray-600 hover:text-green-600 block px-3 py-2 text-base font-medium">
+          Partners
+        </a>
+        <a 
+          href="https://saturdays.typeform.com/to/NtmGk30X" 
+          target="_blank"
+          class="bg-green-600 text-white block px-3 py-2 text-base font-medium rounded-lg mt-4"
+        >
+          ÚNETE
+        </a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<script>
+  // Mobile menu toggle
+  document.addEventListener('DOMContentLoaded', function() {
+    const button = document.querySelector('.mobile-menu-button');
+    const menu = document.querySelector('.mobile-menu');
+    
+    if (button && menu) {
+      button.addEventListener('click', function() {
+        menu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>

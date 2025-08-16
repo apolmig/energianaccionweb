@@ -1,0 +1,294 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+---
+
+<Layout title="Energía en Acción - Empoderando personas a lograr grandes cosas">
+  <Header />
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-white to-green-50">
+    <div class="absolute inset-0 bg-[url('/images/samuel-zeller-358865-unsplash-2000x1333.jpg')] bg-cover bg-center opacity-10"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          Energía en Acción empodera personas a 
+          <span class="text-green-600">lograr grandes cosas</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+          Acompañados de profesionales mentores, equipos de estudiantes aprenden realizando 
+          <span class="font-semibold text-gray-800">proyectos reales con impacto social</span> para organizaciones.
+        </p>
+        <p class="text-lg text-gray-600 mb-10">
+          También realizamos proyectos para luchar contra el cambio climático.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="https://saturdays.typeform.com/to/NtmGk30X" 
+            target="_blank"
+            class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            ¿Mentor, Docente u Organización? ¡Únete Aquí!
+          </a>
+          <a 
+            href="#que-hacemos" 
+            class="border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300"
+          >
+            Descubre más
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <a href="#que-hacemos" class="text-green-600">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- What We Do Section -->
+  <section id="que-hacemos" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">¿Qué hacemos?</h2>
+      </div>
+
+      <!-- Estudiantes -->
+      <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div class="order-2 lg:order-1">
+          <h3 class="text-3xl font-bold text-gray-900 mb-6">Estudiantes</h3>
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Empoderamos a estudiantes a aprender mediante la realización de proyectos con impacto social para organizaciones, 
+            aplicando metodologías de gestión innovadoras junto con las últimas tecnologías.
+          </p>
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Típicamente los proyectos son parte del proyecto curricular de estudios, y culminan en una presentación (Demo Day) 
+            a las organizaciones colaboradoras.
+          </p>
+          <p class="text-sm text-green-600 font-medium">
+            <strong>Clica en el testimonio de Pablo</strong>
+          </p>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+            <iframe 
+              class="w-full aspect-video" 
+              src="https://www.youtube.com/embed/TmEJWpp7uDs?rel=0&showinfo=0" 
+              title="Testimonio de Pablo - Estudiante"
+              frameborder="0" 
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Docentes -->
+      <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
+        <div>
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+            <iframe 
+              class="w-full aspect-video" 
+              src="https://www.youtube.com/embed/5doT1nP2UYg?rel=0&showinfo=0" 
+              title="Testimonio de Patricia - Docente"
+              frameborder="0" 
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div>
+          <h3 class="text-3xl font-bold text-gray-900 mb-6">Docentes</h3>
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            El programa es óptimo para dar la vuelta a la clase y transformarla en aprendizaje en base a proyectos (ABP), 
+            facilitando la docencia, mientras proporciona una experiencia más interesante y rica a todos los participantes.
+          </p>
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Por un lado influye positivamente en el desarrollo personal y profesional de los estudiantes, acercándoles al mercado laboral 
+            a la vez que generan impacto social, y por otro, los mentores desarrollan habilidades de liderazgo y trabajo en equipo que les beneficia en su profesión.
+          </p>
+          <p class="text-sm text-green-600 font-medium">
+            <strong>Clica en el testimonio de Patricia</strong>
+          </p>
+        </div>
+      </div>
+
+      <!-- Mentores -->
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="order-2 lg:order-1">
+          <h3 class="text-3xl font-bold text-gray-900 mb-6">Mentores</h3>
+          <p class="text-lg text-gray-600 leading-relaxed mb-6">
+            Profesionales de organizaciones líderes colaboran como mentores ayudando a los equipos de estudiantes a realizar los proyectos para entidades sociales, 
+            de esta forma contribuyen a generar un triple impacto positivo: para los estudiantes, las entidades sociales y para su propio desarrollo de habilidades 
+            como el trabajo en equipo, en remoto y la adaptación al cambio.
+          </p>
+          <p class="text-sm text-green-600 font-medium">
+            <strong>Clica en el testimonio de Joan</strong>
+          </p>
+        </div>
+        <div class="order-1 lg:order-2">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+            <iframe 
+              class="w-full aspect-video" 
+              src="https://www.youtube.com/embed/m6NiK25nRH4?rel=0&showinfo=0" 
+              title="Testimonio de Joan - Mentor"
+              frameborder="0" 
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-20 bg-green-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <div class="text-green-600 text-6xl mb-4">
+            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <h3 class="text-5xl font-bold text-gray-900 mb-2">700</h3>
+          <h4 class="text-xl font-semibold text-gray-700 mb-2">Estudiantes</h4>
+          <p class="text-gray-600">han realizado grandes cosas con su participación en el programa</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <div class="text-green-600 text-6xl mb-4">
+            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-5xl font-bold text-gray-900 mb-2">130</h3>
+          <h4 class="text-xl font-semibold text-gray-700 mb-2">Mentores</h4>
+          <p class="text-gray-600">han ayudado a jóvenes y contribuido al bienestar de la comunidad</p>
+        </div>
+
+        <div class="bg-white rounded-2xl p-8 shadow-lg">
+          <div class="text-green-600 text-6xl mb-4">
+            <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4z" clip-rule="evenodd"></path>
+              <path d="M10 5a2 2 0 012-2h3a1 1 0 011 1v6a3 3 0 01-3 3H10V5z"></path>
+            </svg>
+          </div>
+          <h3 class="text-5xl font-bold text-gray-900 mb-2">100</h3>
+          <h4 class="text-xl font-semibold text-gray-700 mb-2">Organizaciones</h4>
+          <p class="text-gray-600">han recibido diseños de proyectos e iniciativas para mejorar su impacto social</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="nosotros" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Quiénes Somos</h2>
+        <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          Energía en Acción es una organización sin ánimo de lucro formada por profesionales de la educación y la energía 
+          unidos por la pasión de ayudar a transformar el presente en un futuro mejor, uniendo la energía de las personas con la tecnología.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Miguel Guerrero -->
+        <div class="text-center group">
+          <div class="relative mb-6">
+            <img 
+              class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300" 
+              src="/images/miguel-energianaccion-510x526.png" 
+              alt="Miguel Guerrero"
+            />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Miguel Guerrero</h3>
+          <a 
+            href="https://www.linkedin.com/in/miguelguer/" 
+            target="_blank"
+            class="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Cristina Clemente -->
+        <div class="text-center group">
+          <div class="relative mb-6">
+            <img 
+              class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300" 
+              src="/images/cristinaClemente_bn.jpg.png" 
+              alt="Cristina Clemente"
+            />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Cristina Clemente</h3>
+          <a 
+            href="https://www.linkedin.com/in/cristinaclementearenere/" 
+            target="_blank"
+            class="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Javier Burzurí -->
+        <div class="text-center group">
+          <div class="relative mb-6">
+            <img 
+              class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300" 
+              src="/images/javier-energianacacion-510x556.png" 
+              alt="Javier Burzurí"
+            />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Javier Burzurí</h3>
+          <a 
+            href="https://www.linkedin.com/in/javier-burzur%C3%AD-marcell%C3%A1n-10925b11/" 
+            target="_blank"
+            class="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Luca Sanminiatelli -->
+        <div class="text-center group">
+          <div class="relative mb-6">
+            <img 
+              class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300" 
+              src="/images/luca-energianaccion-510x510.png" 
+              alt="Luca Sanminiatelli"
+            />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 mb-2">Luca Sanminiatelli</h3>
+          <a 
+            href="https://www.linkedin.com/in/luca-sanminiatelli/" 
+            target="_blank"
+            class="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+</style>
