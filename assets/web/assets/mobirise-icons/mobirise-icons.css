@@ -1,0 +1,26 @@
+/* Mobirise Icons */
+@font-face {
+  font-family: 'Mobirise';
+  src: url('mobirise.woff2') format('woff2'),
+       url('mobirise.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="mbri-"], [class*=" mbri-"] {
+  font-family: 'Mobirise' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mbri-down:before { content: "\e900"; }
+.mbri-hearth:before { content: "\e901"; }
+.mbri-smile-face:before { content: "\e902"; }
+.mbri-rocket:before { content: "\e903"; }
+.mbri-responsive:before { content: "\e904"; }
