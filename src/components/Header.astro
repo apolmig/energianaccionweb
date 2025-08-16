@@ -1,14 +1,14 @@
 ---
 ---
 
-<header class="bg-white shadow-sm sticky top-0 z-50">
+<header class="bg-white shadow-sm sticky top-0 z-50 backdrop-blur-sm bg-white/95">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex justify-between items-center h-20">
+    <div class="flex justify-between items-center h-16 sm:h-20">
       <!-- Logo -->
       <div class="flex-shrink-0 flex items-center">
-        <a href="/" class="flex items-center space-x-3">
+        <a href="/" class="flex items-center space-x-3 group">
           <img 
-            class="h-12 w-auto" 
+            class="h-10 sm:h-12 w-auto transition-transform group-hover:scale-105" 
             src="/images/energianaccion-logo-1.svg" 
             alt="Energía en Acción"
           />
@@ -86,14 +86,15 @@
       <!-- CTA Button -->
       <div class="hidden md:block">
         <a 
-          href="https://saturdays.typeform.com/to/NtmGk30X" 
+          href="https://form.typeform.com/to/NtmGk30X" 
           target="_blank"
-          class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-medium transition-colors inline-flex items-center space-x-2"
+          class="bg-green-600 hover:bg-green-700 text-white px-4 lg:px-6 py-2 rounded-lg font-medium transition-all duration-300 inline-flex items-center space-x-2 transform hover:scale-105 shadow-sm hover:shadow-md"
         >
           <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
             <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
           </svg>
-          <span>ÚNETE</span>
+          <span class="hidden lg:inline">ÚNETE</span>
+          <span class="lg:hidden">+</span>
         </a>
       </div>
 
@@ -113,23 +114,72 @@
     </div>
 
     <!-- Mobile menu -->
-    <div class="mobile-menu hidden md:hidden">
-      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
-        <a href="#que-hacemos" class="text-gray-600 hover:text-green-600 block px-3 py-2 text-base font-medium">
+    <div class="mobile-menu hidden md:hidden transform transition-all duration-300 ease-in-out">
+      <div class="px-2 pt-4 pb-6 space-y-2 sm:px-3 bg-white border-t shadow-lg">
+        <a href="#que-hacemos" class="text-gray-600 hover:text-green-600 hover:bg-green-50 block px-4 py-3 text-base font-medium rounded-lg transition-colors">
           ¿Qué hacemos?
         </a>
-        <a href="#nosotros" class="text-gray-600 hover:text-green-600 block px-3 py-2 text-base font-medium">
-          Nosotros
-        </a>
-        <a href="/partners" class="text-gray-600 hover:text-green-600 block px-3 py-2 text-base font-medium">
+        
+        <!-- Mobile Dropdown - Cambio Climático -->
+        <div class="mobile-dropdown">
+          <button class="mobile-dropdown-btn text-gray-600 hover:text-green-600 hover:bg-green-50 w-full text-left px-4 py-3 text-base font-medium rounded-lg transition-colors flex items-center justify-between">
+            Cambio Climático
+            <svg class="mobile-dropdown-icon w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="mobile-dropdown-content hidden pl-6 space-y-1">
+            <a href="http://escogetuenergia.com" target="_blank" class="text-gray-500 hover:text-green-600 block px-3 py-2 text-sm">
+              Escogetuenergia.com
+            </a>
+            <a href="http://yoahorro.org" target="_blank" class="text-gray-500 hover:text-green-600 block px-3 py-2 text-sm">
+              Yoahorro.org
+            </a>
+          </div>
+        </div>
+
+        <!-- Mobile Dropdown - Proyectos -->
+        <div class="mobile-dropdown">
+          <button class="mobile-dropdown-btn text-gray-600 hover:text-green-600 hover:bg-green-50 w-full text-left px-4 py-3 text-base font-medium rounded-lg transition-colors flex items-center justify-between">
+            Proyectos con Estudiantes
+            <svg class="mobile-dropdown-icon w-4 h-4 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+          </button>
+          <div class="mobile-dropdown-content hidden pl-6 space-y-1">
+            <a href="/cortos" class="text-gray-500 hover:text-green-600 block px-3 py-2 text-sm">
+              2017 Cortos sociales
+            </a>
+            <a href="/marketing" class="text-gray-500 hover:text-green-600 block px-3 py-2 text-sm">
+              Curso 2017/18 FP
+            </a>
+            <a href="/curso2018-2019" class="text-gray-500 hover:text-green-600 block px-3 py-2 text-sm">
+              Curso 2018/19 FP
+            </a>
+            <a href="/curso2019-2020" class="text-gray-500 hover:text-green-600 block px-3 py-2 text-sm">
+              Curso 2019/20 FP
+            </a>
+            <a href="/curso2020-2021" class="text-gray-500 hover:text-green-600 block px-3 py-2 text-sm">
+              Curso 2020/21 FP y ESO
+            </a>
+            <a href="/curso2021-2022" class="text-gray-500 hover:text-green-600 block px-3 py-2 text-sm">
+              Curso 2021/22 ESO, BAT y FP
+            </a>
+          </div>
+        </div>
+
+        <a href="/partners" class="text-gray-600 hover:text-green-600 hover:bg-green-50 block px-4 py-3 text-base font-medium rounded-lg transition-colors">
           Partners
         </a>
+        <a href="#nosotros" class="text-gray-600 hover:text-green-600 hover:bg-green-50 block px-4 py-3 text-base font-medium rounded-lg transition-colors">
+          Nosotros
+        </a>
         <a 
-          href="https://saturdays.typeform.com/to/NtmGk30X" 
+          href="https://form.typeform.com/to/NtmGk30X" 
           target="_blank"
-          class="bg-green-600 text-white block px-3 py-2 text-base font-medium rounded-lg mt-4"
+          class="bg-green-600 hover:bg-green-700 text-white block px-4 py-3 text-base font-medium rounded-lg mt-6 transition-all duration-300 transform hover:scale-105 shadow-sm hover:shadow-md text-center"
         >
-          ÚNETE
+          ÚNETE AQUÍ
         </a>
       </div>
     </div>
@@ -147,5 +197,28 @@
         menu.classList.toggle('hidden');
       });
     }
+
+    // Mobile dropdown toggles
+    const dropdownBtns = document.querySelectorAll('.mobile-dropdown-btn');
+    
+    dropdownBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        const icon = this.querySelector('.mobile-dropdown-icon');
+        
+        content.classList.toggle('hidden');
+        icon.classList.toggle('rotate-180');
+      });
+    });
+
+    // Close mobile menu when clicking on links
+    const mobileLinks = document.querySelectorAll('.mobile-menu a[href^="#"], .mobile-menu a[href^="/"]');
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        if (this.getAttribute('href').startsWith('#') || this.getAttribute('href').startsWith('/')) {
+          menu.classList.add('hidden');
+        }
+      });
+    });
   });
 </script>

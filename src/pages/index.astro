@@ -8,42 +8,68 @@ import Footer from '../components/Footer.astro'
   <Header />
 
   <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-white to-green-50">
+  <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-white to-green-50 overflow-hidden">
     <div class="absolute inset-0 bg-[url('/images/samuel-zeller-358865-unsplash-2000x1333.jpg')] bg-cover bg-center opacity-10"></div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <div class="max-w-4xl mx-auto">
-        <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+    <div class="absolute inset-0 bg-gradient-to-br from-green-600/5 to-blue-600/5"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
+      <div class="max-w-5xl mx-auto">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
           Energía en Acción empodera personas a 
-          <span class="text-green-600">lograr grandes cosas</span>
+          <span class="text-green-600 bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent">lograr grandes cosas</span>
         </h1>
-        <p class="text-xl md:text-2xl text-gray-600 mb-8 leading-relaxed">
+        <p class="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-4xl mx-auto">
           Acompañados de profesionales mentores, equipos de estudiantes aprenden realizando 
           <span class="font-semibold text-gray-800">proyectos reales con impacto social</span> para organizaciones.
         </p>
-        <p class="text-lg text-gray-600 mb-10">
+        <p class="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 max-w-3xl mx-auto">
           También realizamos proyectos para luchar contra el cambio climático.
         </p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <a 
-            href="https://saturdays.typeform.com/to/NtmGk30X" 
+            href="https://form.typeform.com/to/NtmGk30X" 
             target="_blank"
-            class="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-2 group"
           >
-            ¿Mentor, Docente u Organización? ¡Únete Aquí!
+            <span>¿Mentor, Docente u Organización?</span>
+            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
           </a>
           <a 
             href="#que-hacemos" 
-            class="border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300"
+            class="w-full sm:w-auto border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-6 sm:px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center space-x-2"
           >
-            Descubre más
+            <span>Descubre más</span>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
           </a>
+        </div>
+
+        <!-- Stats Preview -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto">
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-green-100">
+            <div class="text-2xl sm:text-3xl font-bold text-green-600">700+</div>
+            <div class="text-sm sm:text-base text-gray-600">Estudiantes impactados</div>
+          </div>
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-green-100">
+            <div class="text-2xl sm:text-3xl font-bold text-green-600">100+</div>
+            <div class="text-sm sm:text-base text-gray-600">Organizaciones colaborando</div>
+          </div>
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-green-100">
+            <div class="text-2xl sm:text-3xl font-bold text-green-600">5+</div>
+            <div class="text-sm sm:text-base text-gray-600">Años de experiencia</div>
+          </div>
         </div>
       </div>
     </div>
     
     <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <a href="#que-hacemos" class="text-green-600">
+    <div class="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <a href="#que-hacemos" class="text-green-600 hover:text-green-700 transition-colors">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
