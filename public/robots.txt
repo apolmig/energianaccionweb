@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://energianaccion.org/sitemap.xml
+
+# Disallow admin areas (if any exist in the future)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow search engines to index all public content
+Allow: /
+Allow: /partners
+Allow: /cortos
+Allow: /marketing
+Allow: /curso2018-2019
+Allow: /curso2019-2020
+Allow: /curso2020-2021
+Allow: /curso2021-2022
+
+# Crawl-delay (optional - helps prevent server overload)
+Crawl-delay: 1

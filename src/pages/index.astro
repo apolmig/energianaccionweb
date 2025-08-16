@@ -10,13 +10,13 @@ import Footer from '../components/Footer.astro'
   <!-- Hero Section -->
   <section class="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 via-white to-green-50 overflow-hidden">
     <div class="absolute inset-0 bg-[url('/images/samuel-zeller-358865-unsplash-2000x1333.jpg')] bg-cover bg-center opacity-10"></div>
-    <div class="absolute inset-0 bg-gradient-to-br from-green-600/5 to-blue-600/5"></div>
+    <div class="absolute inset-0 bg-gradient-to-br from-green-600/5 to-green-700/5"></div>
     
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
       <div class="max-w-5xl mx-auto">
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
           Conectamos 
-          <span class="text-blue-600 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">profesionales mentores</span>
+          <span class="text-green-700 bg-gradient-to-r from-green-700 to-green-600 bg-clip-text text-transparent">profesionales mentores</span>
           con estudiantes talentosos
         </h1>
         <p class="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-4xl mx-auto">
@@ -24,9 +24,9 @@ import Footer from '../components/Footer.astro'
           <span class="font-semibold text-gray-800">desafíos reales de organizaciones sociales</span> 
           con tu experiencia profesional.
         </p>
-        <div class="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-6 mb-8 sm:mb-10 max-w-4xl mx-auto border border-blue-100">
-          <p class="text-base sm:text-lg text-gray-700 font-medium">
-            💡 <strong>Para Profesionales:</strong> Comparte tu expertise, desarrolla habilidades de liderazgo y contribuye al cambio social mientras guías proyectos innovadores.
+        <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-2xl p-6 mb-8 sm:mb-10 max-w-4xl mx-auto border border-green-200">
+          <p class="text-base sm:text-lg text-gray-800 font-medium">
+            💡 <strong class="text-green-800">Para Profesionales:</strong> Comparte tu expertise, desarrolla habilidades de liderazgo y contribuye al cambio social mientras guías proyectos innovadores.
           </p>
         </div>
         
@@ -35,7 +35,8 @@ import Footer from '../components/Footer.astro'
           <a 
             href="https://form.typeform.com/to/NtmGk30X" 
             target="_blank"
-            class="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white px-6 sm:px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-2 group"
+            rel="noopener noreferrer"
+            class="w-full sm:w-auto bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-6 sm:px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-2 group"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
@@ -47,7 +48,7 @@ import Footer from '../components/Footer.astro'
           </a>
           <a 
             href="#mentorship-program" 
-            class="w-full sm:w-auto border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 sm:px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center space-x-2"
+            class="w-full sm:w-auto border-2 border-green-600 text-green-700 hover:bg-green-600 hover:text-white px-6 sm:px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center space-x-2"
           >
             <span>Conoce el Programa</span>
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -58,8 +59,8 @@ import Footer from '../components/Footer.astro'
 
         <!-- Stats Preview -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
-          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-blue-100 hover:border-blue-200 transition-colors">
-            <div class="text-2xl sm:text-3xl font-bold text-blue-600 mb-1">700+</div>
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-green-100 hover:border-green-200 transition-colors">
+            <div class="text-2xl sm:text-3xl font-bold text-green-600 mb-1">700+</div>
             <div class="text-sm sm:text-base text-gray-600">Estudiantes mentorados</div>
             <div class="text-xs text-gray-500 mt-1">desarrollando proyectos reales</div>
           </div>
@@ -68,8 +69,8 @@ import Footer from '../components/Footer.astro'
             <div class="text-sm sm:text-base text-gray-600">Mentores profesionales</div>
             <div class="text-xs text-gray-500 mt-1">de diversos sectores</div>
           </div>
-          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-purple-100 hover:border-purple-200 transition-colors">
-            <div class="text-2xl sm:text-3xl font-bold text-purple-600 mb-1">98%</div>
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-green-100 hover:border-green-200 transition-colors">
+            <div class="text-2xl sm:text-3xl font-bold text-green-700 mb-1">98%</div>
             <div class="text-sm sm:text-base text-gray-600">Satisfacción mentores</div>
             <div class="text-xs text-gray-500 mt-1">recomiendan la experiencia</div>
           </div>
@@ -79,7 +80,7 @@ import Footer from '../components/Footer.astro'
     
     <!-- Scroll indicator -->
     <div class="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <a href="#mentorship-program" class="text-blue-600 hover:text-blue-700 transition-colors">
+      <a href="#mentorship-program" class="text-green-600 hover:text-green-700 transition-colors">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
@@ -88,7 +89,7 @@ import Footer from '../components/Footer.astro'
   </section>
 
   <!-- Mentorship Program Section -->
-  <section id="mentorship-program" class="py-20 bg-gradient-to-br from-blue-50 via-white to-green-50">
+  <section id="mentorship-program" class="py-20 bg-gradient-to-br from-green-50 via-white to-green-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-gray-900 mb-4">Programa de Mentoring Profesional</h2>
@@ -100,47 +101,47 @@ import Footer from '../components/Footer.astro'
       <!-- Benefits for Mentors -->
       <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
         <div class="order-2 lg:order-1">
-          <h3 class="text-3xl font-bold text-blue-900 mb-6">🌟 ¿Por qué ser Mentor?</h3>
+          <h3 class="text-3xl font-bold text-green-800 mb-6">🌟 ¿Por qué ser Mentor?</h3>
           <div class="space-y-4">
             <div class="flex items-start space-x-3">
               <div class="flex-shrink-0">
-                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
-                  <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                  <svg class="w-4 h-4 text-green-700" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
                 </div>
               </div>
               <div>
                 <h4 class="text-lg font-semibold text-gray-900">Desarrolla habilidades de liderazgo</h4>
-                <p class="text-gray-600">Fortalece tu capacidad de guiar equipos y gestionar proyectos complejos</p>
+                <p class="text-gray-700">Fortalece tu capacidad de guiar equipos y gestionar proyectos complejos</p>
               </div>
             </div>
             
             <div class="flex items-start space-x-3">
               <div class="flex-shrink-0">
                 <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                  <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                  <svg class="w-4 h-4 text-green-700" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
                 </div>
               </div>
               <div>
                 <h4 class="text-lg font-semibold text-gray-900">Contribuye al cambio social</h4>
-                <p class="text-gray-600">Impacta positivamente en tu comunidad mientras compartes tu expertise</p>
+                <p class="text-gray-700">Impacta positivamente en tu comunidad mientras compartes tu expertise</p>
               </div>
             </div>
             
             <div class="flex items-start space-x-3">
               <div class="flex-shrink-0">
-                <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
-                  <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                  <svg class="w-4 h-4 text-green-700" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
                   </svg>
                 </div>
               </div>
               <div>
                 <h4 class="text-lg font-semibold text-gray-900">Amplía tu red profesional</h4>
-                <p class="text-gray-600">Conecta con otros profesionales y potencial talento joven</p>
+                <p class="text-gray-700">Conecta con otros profesionales y potencial talento joven</p>
               </div>
             </div>
           </div>
@@ -150,9 +151,11 @@ import Footer from '../components/Footer.astro'
             <iframe 
               class="w-full aspect-video" 
               src="https://www.youtube.com/embed/m6NiK25nRH4?rel=0&showinfo=0" 
-              title="Testimonio de Joan - Mentor profesional"
+              title="Testimonio de Joan - Mentor profesional en Fundación Repsol"
               frameborder="0" 
               allowfullscreen
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             ></iframe>
             <div class="absolute bottom-4 left-4 bg-white/90 rounded-lg px-3 py-1">
               <p class="text-sm font-medium text-gray-900">Joan, Mentor en Fundación Repsol</p>
@@ -162,32 +165,32 @@ import Footer from '../components/Footer.astro'
       </div>
 
       <!-- How It Works -->
-      <div id="mentor-benefits" class="bg-white rounded-3xl p-8 md:p-12 shadow-lg border-2 border-blue-100 mb-20">
+      <div id="mentor-benefits" class="bg-white rounded-3xl p-8 md:p-12 shadow-lg border-2 border-green-200 mb-20">
         <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">¿Cómo funciona el mentoring?</h3>
         
         <div class="grid md:grid-cols-3 gap-8">
           <div class="text-center">
-            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl font-bold text-blue-600">1</span>
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-green-700">1</span>
             </div>
             <h4 class="text-xl font-semibold text-gray-900 mb-3">Te emparejamos</h4>
-            <p class="text-gray-600">Conectamos tu experiencia con un equipo de estudiantes y un proyecto real de una organización social</p>
+            <p class="text-gray-700">Conectamos tu experiencia con un equipo de estudiantes y un proyecto real de una organización social</p>
           </div>
           
           <div class="text-center">
-            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl font-bold text-green-600">2</span>
+            <div class="w-16 h-16 bg-green-200 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-green-800">2</span>
             </div>
             <h4 class="text-xl font-semibold text-gray-900 mb-3">Guías el proyecto</h4>
-            <p class="text-gray-600">Dedicas 2-3 horas semanales durante 12-16 semanas para mentorizar y guiar el desarrollo del proyecto</p>
+            <p class="text-gray-700">Dedicas 2-3 horas semanales durante 12-16 semanas para mentorizar y guiar el desarrollo del proyecto</p>
           </div>
           
           <div class="text-center">
-            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <span class="text-2xl font-bold text-purple-600">3</span>
+            <div class="w-16 h-16 bg-green-300 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-green-900">3</span>
             </div>
             <h4 class="text-xl font-semibold text-gray-900 mb-3">Celebras el impacto</h4>
-            <p class="text-gray-600">Participas en el Demo Day donde los estudiantes presentan los resultados a las organizaciones</p>
+            <p class="text-gray-700">Participas en el Demo Day donde los estudiantes presentan los resultados a las organizaciones</p>
           </div>
         </div>
         
@@ -195,7 +198,8 @@ import Footer from '../components/Footer.astro'
           <a 
             href="https://form.typeform.com/to/NtmGk30X" 
             target="_blank"
-            class="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+            rel="noopener noreferrer"
+            class="inline-flex items-center space-x-2 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
@@ -212,9 +216,11 @@ import Footer from '../components/Footer.astro'
             <iframe 
               class="w-full aspect-video" 
               src="https://www.youtube.com/embed/TmEJWpp7uDs?rel=0&showinfo=0" 
-              title="Testimonio de Pablo - Estudiante"
+              title="Testimonio de Pablo - Estudiante participante en proyectos sociales"
               frameborder="0" 
               allowfullscreen
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             ></iframe>
             <div class="absolute bottom-4 left-4 bg-white/90 rounded-lg px-3 py-1">
               <p class="text-sm font-medium text-gray-900">Pablo, Estudiante participante</p>
@@ -231,8 +237,8 @@ import Footer from '../components/Footer.astro'
             Estos jóvenes utilizan metodologías ágiles y las últimas tecnologías para desarrollar 
             soluciones innovadoras que realmente marquen la diferencia.
           </p>
-          <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 border border-green-200">
-            <p class="text-green-700 font-medium">
+          <div class="bg-gradient-to-r from-green-50 to-green-100 rounded-lg p-4 border border-green-200">
+            <p class="text-green-800 font-medium">
               💬 "La experiencia fue increíble. Aprendí más en estos meses que en todo el curso anterior" - Pablo
             </p>
           </div>
@@ -242,47 +248,47 @@ import Footer from '../components/Footer.astro'
   </section>
 
   <!-- Mentor Impact Section -->
-  <section class="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-green-50">
+  <section class="py-20 bg-gradient-to-br from-green-50 via-green-25 to-green-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
         <h2 class="text-4xl font-bold text-gray-900 mb-4">El impacto de nuestros mentores</h2>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        <p class="text-xl text-gray-700 max-w-3xl mx-auto">
           Profesionales como tú están transformando vidas y comunidades
         </p>
       </div>
       
       <div class="grid md:grid-cols-3 gap-8 text-center mb-16">
-        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-blue-100 hover:border-blue-200 transition-colors">
-          <div class="text-blue-600 text-6xl mb-4">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-green-200 hover:border-green-300 transition-colors">
+          <div class="text-green-600 text-6xl mb-4">
             <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
               <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
             </svg>
           </div>
           <h3 class="text-5xl font-bold text-gray-900 mb-2">150+</h3>
-          <h4 class="text-xl font-semibold text-gray-700 mb-2">Mentores Activos</h4>
-          <p class="text-gray-600">profesionales comprometidos con el desarrollo del talento joven</p>
+          <h4 class="text-xl font-semibold text-gray-800 mb-2">Mentores Activos</h4>
+          <p class="text-gray-700">profesionales comprometidos con el desarrollo del talento joven</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-green-100 hover:border-green-200 transition-colors">
-          <div class="text-green-600 text-6xl mb-4">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-green-200 hover:border-green-300 transition-colors">
+          <div class="text-green-700 text-6xl mb-4">
             <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </div>
           <h3 class="text-5xl font-bold text-gray-900 mb-2">98%</h3>
-          <h4 class="text-xl font-semibold text-gray-700 mb-2">Satisfacción</h4>
-          <p class="text-gray-600">de mentores recomiendan la experiencia a otros profesionales</p>
+          <h4 class="text-xl font-semibold text-gray-800 mb-2">Satisfacción</h4>
+          <p class="text-gray-700">de mentores recomiendan la experiencia a otros profesionales</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-purple-100 hover:border-purple-200 transition-colors">
-          <div class="text-purple-600 text-6xl mb-4">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-green-200 hover:border-green-300 transition-colors">
+          <div class="text-green-800 text-6xl mb-4">
             <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
               <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
             </svg>
           </div>
           <h3 class="text-5xl font-bold text-gray-900 mb-2">85%</h3>
-          <h4 class="text-xl font-semibold text-gray-700 mb-2">Crecimiento</h4>
-          <p class="text-gray-600">reportan mejora en sus habilidades de liderazgo tras mentorizar</p>
+          <h4 class="text-xl font-semibold text-gray-800 mb-2">Crecimiento</h4>
+          <p class="text-gray-700">reportan mejora en sus habilidades de liderazgo tras mentorizar</p>
         </div>
       </div>
 
@@ -291,32 +297,32 @@ import Footer from '../components/Footer.astro'
         <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">Sectores de nuestros mentores</h3>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
           <div class="space-y-2">
-            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
-              <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+              <svg class="w-6 h-6 text-green-700" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path>
               </svg>
             </div>
             <p class="text-sm font-medium text-gray-900">Tecnología</p>
           </div>
           <div class="space-y-2">
-            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto">
-              <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+            <div class="w-12 h-12 bg-green-200 rounded-full flex items-center justify-center mx-auto">
+              <svg class="w-6 h-6 text-green-800" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"></path>
               </svg>
             </div>
             <p class="text-sm font-medium text-gray-900">Finanzas</p>
           </div>
           <div class="space-y-2">
-            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
-              <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+            <div class="w-12 h-12 bg-green-300 rounded-full flex items-center justify-center mx-auto">
+              <svg class="w-6 h-6 text-green-900" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
               </svg>
             </div>
             <p class="text-sm font-medium text-gray-900">Consultoría</p>
           </div>
           <div class="space-y-2">
-            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto">
-              <svg class="w-6 h-6 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+            <div class="w-12 h-12 bg-green-400 rounded-full flex items-center justify-center mx-auto">
+              <svg class="w-6 h-6 text-green-900" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
               </svg>
             </div>
@@ -345,13 +351,17 @@ import Footer from '../components/Footer.astro'
             <img 
               class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300" 
               src="/images/miguel-energianaccion-510x526.png" 
-              alt="Miguel Guerrero"
+              alt="Miguel Guerrero - Fundador de Energía en Acción"
+              loading="lazy"
+              width="128"
+              height="128"
             />
           </div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Miguel Guerrero</h3>
           <a 
             href="https://www.linkedin.com/in/miguelguer/" 
             target="_blank"
+            rel="noopener noreferrer"
             class="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -366,13 +376,17 @@ import Footer from '../components/Footer.astro'
             <img 
               class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300" 
               src="/images/cristinaClemente_bn.jpg.png" 
-              alt="Cristina Clemente"
+              alt="Cristina Clemente - Co-fundadora de Energía en Acción"
+              loading="lazy"
+              width="128"
+              height="128"
             />
           </div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Cristina Clemente</h3>
           <a 
             href="https://www.linkedin.com/in/cristinaclementearenere/" 
             target="_blank"
+            rel="noopener noreferrer"
             class="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -387,13 +401,17 @@ import Footer from '../components/Footer.astro'
             <img 
               class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300" 
               src="/images/javier-energianacacion-510x556.png" 
-              alt="Javier Burzurí"
+              alt="Javier Burzurí - Miembro del equipo de Energía en Acción"
+              loading="lazy"
+              width="128"
+              height="128"
             />
           </div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Javier Burzurí</h3>
           <a 
             href="https://www.linkedin.com/in/javier-burzur%C3%AD-marcell%C3%A1n-10925b11/" 
             target="_blank"
+            rel="noopener noreferrer"
             class="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -408,13 +426,17 @@ import Footer from '../components/Footer.astro'
             <img 
               class="w-32 h-32 rounded-full mx-auto object-cover shadow-lg group-hover:shadow-xl transition-shadow duration-300" 
               src="/images/luca-energianaccion-510x510.png" 
-              alt="Luca Sanminiatelli"
+              alt="Luca Sanminiatelli - Miembro del equipo de Energía en Acción"
+              loading="lazy"
+              width="128"
+              height="128"
             />
           </div>
           <h3 class="text-xl font-semibold text-gray-900 mb-2">Luca Sanminiatelli</h3>
           <a 
             href="https://www.linkedin.com/in/luca-sanminiatelli/" 
             target="_blank"
+            rel="noopener noreferrer"
             class="inline-flex items-center text-green-600 hover:text-green-700 transition-colors"
           >
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

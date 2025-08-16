@@ -15,23 +15,145 @@ const { title, description = "Empodera a personas a lograr grandes cosas con ayu
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Security Headers -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.youtube.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.youtube.com; connect-src 'self' https://www.google-analytics.com; worker-src 'self';" />
+    
+    <!-- SEO Meta Tags -->
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Energía en Acción" />
+    <meta name="keywords" content="mentoring, mentores profesionales, proyectos sociales, estudiantes, formación profesional, impacto social, educación" />
+    <link rel="canonical" href={Astro.url} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="https://energianaccion.org/images/energianaccion-logo-1.svg" />
+    <meta property="og:site_name" content="Energía en Acción" />
+    <meta property="og:locale" content="es_ES" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={Astro.url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content="https://energianaccion.org/images/energianaccion-logo-1.svg" />
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="/images/energianaccion_logo_small.png" />
+    <link rel="apple-touch-icon" href="/images/energianaccion_logo_small.png" />
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#15803d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="EnergíaAcción" />
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
     
-    <!-- Google Analytics -->
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NonProfit",
+      "name": "Energía en Acción",
+      "description": "Organización sin ánimo de lucro que conecta profesionales mentores con estudiantes para desarrollar proyectos sociales de impacto real",
+      "url": "https://energianaccion.org",
+      "logo": "https://energianaccion.org/images/energianaccion-logo-1.svg",
+      "foundingDate": "2017",
+      "foundingLocation": {
+        "@type": "Place",
+        "name": "España"
+      },
+      "mission": "Empoderar a personas a lograr grandes cosas con ayuda de profesionales mentores realizando proyectos reales para entidades",
+      "areaServed": {
+        "@type": "Country",
+        "name": "España"
+      },
+      "knowsAbout": ["Mentoring", "Proyectos Sociales", "Formación Profesional", "Impacto Social", "Educación"],
+      "sameAs": [
+        "https://www.linkedin.com/company/energiaenaccion"
+      ]
+    }
+    </script>
+    
+    <!-- Google Analytics GA4 (Legacy UA kept for transition) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97963898-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
+      
+      // Legacy Universal Analytics (keep during transition)
       gtag('config', 'UA-97963898-1');
+      
+      // Enhanced tracking for conversions
+      gtag('event', 'page_view', {
+        page_title: document.title,
+        page_location: window.location.href,
+        content_group1: 'Mentoring Program'
+      });
+      
+      // Track mentor signup clicks
+      document.addEventListener('DOMContentLoaded', function() {
+        const mentorButtons = document.querySelectorAll('a[href*="typeform.com"]');
+        mentorButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            gtag('event', 'mentor_signup_click', {
+              event_category: 'engagement',
+              event_label: 'Mentor Form CTA',
+              value: 1
+            });
+          });
+        });
+        
+        // Track section navigation
+        const navLinks = document.querySelectorAll('a[href^="/#"]');
+        navLinks.forEach(link => {
+          link.addEventListener('click', function() {
+            gtag('event', 'section_navigation', {
+              event_category: 'navigation',
+              event_label: this.getAttribute('href'),
+              value: 1
+            });
+          });
+        });
+      });
+      
+      // Register Service Worker
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('SW registered with scope: ', registration.scope);
+            })
+            .catch(function(error) {
+              console.log('SW registration failed: ', error);
+            });
+        });
+      }
     </script>
   </head>
   <body class="font-inter text-gray-900 bg-white">
-    <slot />
+    <!-- Skip to main content for screen readers -->
+    <a href="#main-content" class="skip-to-content">
+      Saltar al contenido principal
+    </a>
+    
+    <main id="main-content">
+      <slot />
+    </main>
   </body>
 </html>

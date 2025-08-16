@@ -16,13 +16,13 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Enhanced button styles */
+/* Enhanced button styles with improved contrast */
 .btn-primary {
-  @apply bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
+  @apply bg-green-700 hover:bg-green-800 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl;
 }
 
 .btn-secondary {
-  @apply border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300;
+  @apply border-2 border-green-700 text-green-800 hover:bg-green-700 hover:text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300;
 }
 
 /* Improved text readability */
@@ -51,7 +51,7 @@ body {
   }
 }
 
-/* Custom scrollbar */
+/* Custom scrollbar matching logo colors */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -61,12 +61,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #16a34a;
+  background: #15803d;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #15803d;
+  background: #166534;
 }
 
 /* Loading states */
@@ -93,5 +93,56 @@ body {
 @media (max-width: 768px) {
   button, .btn-primary, .btn-secondary {
     @apply min-h-12 px-6 py-3;
+  }
+}
+
+/* Enhanced accessibility and contrast */
+.high-contrast-text {
+  @apply text-gray-900;
+}
+
+.accessible-link {
+  @apply text-green-800 hover:text-green-900 underline decoration-2 underline-offset-2;
+}
+
+/* Skip to content link for screen readers */
+.skip-to-content {
+  @apply absolute -top-16 left-4 bg-green-800 text-white px-6 py-3 rounded-lg transform transition-all duration-200 focus:top-4 z-50 font-semibold;
+  text-decoration: none;
+}
+
+.skip-to-content:focus {
+  @apply outline-none ring-4 ring-white ring-offset-2 ring-offset-green-800;
+}
+
+/* Improved button focus states */
+button:focus,
+a:focus {
+  @apply outline-none ring-2 ring-green-600 ring-offset-2;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn-primary {
+    @apply bg-green-900 border-2 border-white;
+  }
+  
+  .btn-secondary {
+    @apply border-green-900 text-green-900;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .animate-bounce {
+    animation: none;
   }
 }
