@@ -15,34 +15,41 @@ import Footer from '../components/Footer.astro'
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-fade-in">
       <div class="max-w-5xl mx-auto">
         <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-          Energía en Acción empodera personas a 
-          <span class="text-green-600 bg-gradient-to-r from-green-600 to-green-700 bg-clip-text text-transparent">lograr grandes cosas</span>
+          Conectamos 
+          <span class="text-blue-600 bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">profesionales mentores</span>
+          con estudiantes talentosos
         </h1>
         <p class="text-lg sm:text-xl md:text-2xl text-gray-600 mb-6 sm:mb-8 leading-relaxed max-w-4xl mx-auto">
-          Acompañados de profesionales mentores, equipos de estudiantes aprenden realizando 
-          <span class="font-semibold text-gray-800">proyectos reales con impacto social</span> para organizaciones.
+          Guía a la próxima generación mientras resuelven 
+          <span class="font-semibold text-gray-800">desafíos reales de organizaciones sociales</span> 
+          con tu experiencia profesional.
         </p>
-        <p class="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 max-w-3xl mx-auto">
-          También realizamos proyectos para luchar contra el cambio climático.
-        </p>
+        <div class="bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-6 mb-8 sm:mb-10 max-w-4xl mx-auto border border-blue-100">
+          <p class="text-base sm:text-lg text-gray-700 font-medium">
+            💡 <strong>Para Profesionales:</strong> Comparte tu expertise, desarrolla habilidades de liderazgo y contribuye al cambio social mientras guías proyectos innovadores.
+          </p>
+        </div>
         
         <!-- CTA Buttons -->
         <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
           <a 
             href="https://form.typeform.com/to/NtmGk30X" 
             target="_blank"
-            class="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-6 sm:px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-2 group"
+            class="w-full sm:w-auto bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white px-6 sm:px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center justify-center space-x-2 group"
           >
-            <span>¿Mentor, Docente u Organización?</span>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+            </svg>
+            <span>¡Quiero ser Mentor!</span>
             <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
             </svg>
           </a>
           <a 
-            href="#que-hacemos" 
-            class="w-full sm:w-auto border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-6 sm:px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center space-x-2"
+            href="#mentorship-program" 
+            class="w-full sm:w-auto border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-6 sm:px-8 py-4 rounded-xl font-semibold text-base sm:text-lg transition-all duration-300 inline-flex items-center justify-center space-x-2"
           >
-            <span>Descubre más</span>
+            <span>Conoce el Programa</span>
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
             </svg>
@@ -50,18 +57,21 @@ import Footer from '../components/Footer.astro'
         </div>
 
         <!-- Stats Preview -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-3xl mx-auto">
-          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-green-100">
-            <div class="text-2xl sm:text-3xl font-bold text-green-600">700+</div>
-            <div class="text-sm sm:text-base text-gray-600">Estudiantes impactados</div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 max-w-4xl mx-auto">
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-blue-100 hover:border-blue-200 transition-colors">
+            <div class="text-2xl sm:text-3xl font-bold text-blue-600 mb-1">700+</div>
+            <div class="text-sm sm:text-base text-gray-600">Estudiantes mentorados</div>
+            <div class="text-xs text-gray-500 mt-1">desarrollando proyectos reales</div>
           </div>
-          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-green-100">
-            <div class="text-2xl sm:text-3xl font-bold text-green-600">100+</div>
-            <div class="text-sm sm:text-base text-gray-600">Organizaciones colaborando</div>
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-green-100 hover:border-green-200 transition-colors">
+            <div class="text-2xl sm:text-3xl font-bold text-green-600 mb-1">150+</div>
+            <div class="text-sm sm:text-base text-gray-600">Mentores profesionales</div>
+            <div class="text-xs text-gray-500 mt-1">de diversos sectores</div>
           </div>
-          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-green-100">
-            <div class="text-2xl sm:text-3xl font-bold text-green-600">5+</div>
-            <div class="text-sm sm:text-base text-gray-600">Años de experiencia</div>
+          <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-4 sm:p-6 shadow-sm border border-purple-100 hover:border-purple-200 transition-colors">
+            <div class="text-2xl sm:text-3xl font-bold text-purple-600 mb-1">98%</div>
+            <div class="text-sm sm:text-base text-gray-600">Satisfacción mentores</div>
+            <div class="text-xs text-gray-500 mt-1">recomiendan la experiencia</div>
           </div>
         </div>
       </div>
@@ -69,7 +79,7 @@ import Footer from '../components/Footer.astro'
     
     <!-- Scroll indicator -->
     <div class="absolute bottom-6 sm:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-      <a href="#que-hacemos" class="text-green-600 hover:text-green-700 transition-colors">
+      <a href="#mentorship-program" class="text-blue-600 hover:text-blue-700 transition-colors">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
         </svg>
@@ -77,30 +87,127 @@ import Footer from '../components/Footer.astro'
     </div>
   </section>
 
-  <!-- What We Do Section -->
-  <section id="que-hacemos" class="py-20 bg-white">
+  <!-- Mentorship Program Section -->
+  <section id="mentorship-program" class="py-20 bg-gradient-to-br from-blue-50 via-white to-green-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">¿Qué hacemos?</h2>
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Programa de Mentoring Profesional</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Conectamos tu experiencia profesional con estudiantes motivados para crear proyectos de impacto social real
+        </p>
       </div>
 
-      <!-- Estudiantes -->
+      <!-- Benefits for Mentors -->
       <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
         <div class="order-2 lg:order-1">
-          <h3 class="text-3xl font-bold text-gray-900 mb-6">Estudiantes</h3>
-          <p class="text-lg text-gray-600 leading-relaxed mb-6">
-            Empoderamos a estudiantes a aprender mediante la realización de proyectos con impacto social para organizaciones, 
-            aplicando metodologías de gestión innovadoras junto con las últimas tecnologías.
-          </p>
-          <p class="text-lg text-gray-600 leading-relaxed mb-6">
-            Típicamente los proyectos son parte del proyecto curricular de estudios, y culminan en una presentación (Demo Day) 
-            a las organizaciones colaboradoras.
-          </p>
-          <p class="text-sm text-green-600 font-medium">
-            <strong>Clica en el testimonio de Pablo</strong>
-          </p>
+          <h3 class="text-3xl font-bold text-blue-900 mb-6">🌟 ¿Por qué ser Mentor?</h3>
+          <div class="space-y-4">
+            <div class="flex items-start space-x-3">
+              <div class="flex-shrink-0">
+                <div class="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center">
+                  <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900">Desarrolla habilidades de liderazgo</h4>
+                <p class="text-gray-600">Fortalece tu capacidad de guiar equipos y gestionar proyectos complejos</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-3">
+              <div class="flex-shrink-0">
+                <div class="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
+                  <svg class="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900">Contribuye al cambio social</h4>
+                <p class="text-gray-600">Impacta positivamente en tu comunidad mientras compartes tu expertise</p>
+              </div>
+            </div>
+            
+            <div class="flex items-start space-x-3">
+              <div class="flex-shrink-0">
+                <div class="w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center">
+                  <svg class="w-4 h-4 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900">Amplía tu red profesional</h4>
+                <p class="text-gray-600">Conecta con otros profesionales y potencial talento joven</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="order-1 lg:order-2">
+          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+            <iframe 
+              class="w-full aspect-video" 
+              src="https://www.youtube.com/embed/m6NiK25nRH4?rel=0&showinfo=0" 
+              title="Testimonio de Joan - Mentor profesional"
+              frameborder="0" 
+              allowfullscreen
+            ></iframe>
+            <div class="absolute bottom-4 left-4 bg-white/90 rounded-lg px-3 py-1">
+              <p class="text-sm font-medium text-gray-900">Joan, Mentor en Fundación Repsol</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- How It Works -->
+      <div id="mentor-benefits" class="bg-white rounded-3xl p-8 md:p-12 shadow-lg border-2 border-blue-100 mb-20">
+        <h3 class="text-3xl font-bold text-center text-gray-900 mb-12">¿Cómo funciona el mentoring?</h3>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-blue-600">1</span>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-3">Te emparejamos</h4>
+            <p class="text-gray-600">Conectamos tu experiencia con un equipo de estudiantes y un proyecto real de una organización social</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-green-600">2</span>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-3">Guías el proyecto</h4>
+            <p class="text-gray-600">Dedicas 2-3 horas semanales durante 12-16 semanas para mentorizar y guiar el desarrollo del proyecto</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <span class="text-2xl font-bold text-purple-600">3</span>
+            </div>
+            <h4 class="text-xl font-semibold text-gray-900 mb-3">Celebras el impacto</h4>
+            <p class="text-gray-600">Participas en el Demo Day donde los estudiantes presentan los resultados a las organizaciones</p>
+          </div>
+        </div>
+        
+        <div class="text-center mt-12">
+          <a 
+            href="https://form.typeform.com/to/NtmGk30X" 
+            target="_blank"
+            class="inline-flex items-center space-x-2 bg-gradient-to-r from-blue-600 to-green-600 hover:from-blue-700 hover:to-green-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+            </svg>
+            <span>¡Quiero ser Mentor!</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Student Success Story -->
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
           <div class="relative rounded-2xl overflow-hidden shadow-2xl">
             <iframe 
               class="w-full aspect-video" 
@@ -109,103 +216,112 @@ import Footer from '../components/Footer.astro'
               frameborder="0" 
               allowfullscreen
             ></iframe>
-          </div>
-        </div>
-      </div>
-
-      <!-- Docentes -->
-      <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
-        <div>
-          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-            <iframe 
-              class="w-full aspect-video" 
-              src="https://www.youtube.com/embed/5doT1nP2UYg?rel=0&showinfo=0" 
-              title="Testimonio de Patricia - Docente"
-              frameborder="0" 
-              allowfullscreen
-            ></iframe>
+            <div class="absolute bottom-4 left-4 bg-white/90 rounded-lg px-3 py-1">
+              <p class="text-sm font-medium text-gray-900">Pablo, Estudiante participante</p>
+            </div>
           </div>
         </div>
         <div>
-          <h3 class="text-3xl font-bold text-gray-900 mb-6">Docentes</h3>
+          <h3 class="text-3xl font-bold text-gray-900 mb-6">El talento que mentorizarás</h3>
           <p class="text-lg text-gray-600 leading-relaxed mb-6">
-            El programa es óptimo para dar la vuelta a la clase y transformarla en aprendizaje en base a proyectos (ABP), 
-            facilitando la docencia, mientras proporciona una experiencia más interesante y rica a todos los participantes.
+            Trabajarás con estudiantes motivados de ESO, Bachillerato y FP que están listos para aplicar 
+            sus conocimientos en proyectos reales con impacto social.
           </p>
           <p class="text-lg text-gray-600 leading-relaxed mb-6">
-            Por un lado influye positivamente en el desarrollo personal y profesional de los estudiantes, acercándoles al mercado laboral 
-            a la vez que generan impacto social, y por otro, los mentores desarrollan habilidades de liderazgo y trabajo en equipo que les beneficia en su profesión.
+            Estos jóvenes utilizan metodologías ágiles y las últimas tecnologías para desarrollar 
+            soluciones innovadoras que realmente marquen la diferencia.
           </p>
-          <p class="text-sm text-green-600 font-medium">
-            <strong>Clica en el testimonio de Patricia</strong>
-          </p>
-        </div>
-      </div>
-
-      <!-- Mentores -->
-      <div class="grid lg:grid-cols-2 gap-12 items-center">
-        <div class="order-2 lg:order-1">
-          <h3 class="text-3xl font-bold text-gray-900 mb-6">Mentores</h3>
-          <p class="text-lg text-gray-600 leading-relaxed mb-6">
-            Profesionales de organizaciones líderes colaboran como mentores ayudando a los equipos de estudiantes a realizar los proyectos para entidades sociales, 
-            de esta forma contribuyen a generar un triple impacto positivo: para los estudiantes, las entidades sociales y para su propio desarrollo de habilidades 
-            como el trabajo en equipo, en remoto y la adaptación al cambio.
-          </p>
-          <p class="text-sm text-green-600 font-medium">
-            <strong>Clica en el testimonio de Joan</strong>
-          </p>
-        </div>
-        <div class="order-1 lg:order-2">
-          <div class="relative rounded-2xl overflow-hidden shadow-2xl">
-            <iframe 
-              class="w-full aspect-video" 
-              src="https://www.youtube.com/embed/m6NiK25nRH4?rel=0&showinfo=0" 
-              title="Testimonio de Joan - Mentor"
-              frameborder="0" 
-              allowfullscreen
-            ></iframe>
+          <div class="bg-gradient-to-r from-green-50 to-blue-50 rounded-lg p-4 border border-green-200">
+            <p class="text-green-700 font-medium">
+              💬 "La experiencia fue increíble. Aprendí más en estos meses que en todo el curso anterior" - Pablo
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Stats Section -->
-  <section class="py-20 bg-green-50">
+  <!-- Mentor Impact Section -->
+  <section class="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-green-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-3 gap-8 text-center">
-        <div class="bg-white rounded-2xl p-8 shadow-lg">
-          <div class="text-green-600 text-6xl mb-4">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">El impacto de nuestros mentores</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Profesionales como tú están transformando vidas y comunidades
+        </p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-8 text-center mb-16">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-blue-100 hover:border-blue-200 transition-colors">
+          <div class="text-blue-600 text-6xl mb-4">
             <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+              <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
             </svg>
           </div>
-          <h3 class="text-5xl font-bold text-gray-900 mb-2">700</h3>
-          <h4 class="text-xl font-semibold text-gray-700 mb-2">Estudiantes</h4>
-          <p class="text-gray-600">han realizado grandes cosas con su participación en el programa</p>
+          <h3 class="text-5xl font-bold text-gray-900 mb-2">150+</h3>
+          <h4 class="text-xl font-semibold text-gray-700 mb-2">Mentores Activos</h4>
+          <p class="text-gray-600">profesionales comprometidos con el desarrollo del talento joven</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-8 shadow-lg">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-green-100 hover:border-green-200 transition-colors">
           <div class="text-green-600 text-6xl mb-4">
             <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
               <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
             </svg>
           </div>
-          <h3 class="text-5xl font-bold text-gray-900 mb-2">130</h3>
-          <h4 class="text-xl font-semibold text-gray-700 mb-2">Mentores</h4>
-          <p class="text-gray-600">han ayudado a jóvenes y contribuido al bienestar de la comunidad</p>
+          <h3 class="text-5xl font-bold text-gray-900 mb-2">98%</h3>
+          <h4 class="text-xl font-semibold text-gray-700 mb-2">Satisfacción</h4>
+          <p class="text-gray-600">de mentores recomiendan la experiencia a otros profesionales</p>
         </div>
 
-        <div class="bg-white rounded-2xl p-8 shadow-lg">
-          <div class="text-green-600 text-6xl mb-4">
+        <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-purple-100 hover:border-purple-200 transition-colors">
+          <div class="text-purple-600 text-6xl mb-4">
             <svg class="w-16 h-16 mx-auto" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M4 2a2 2 0 00-2 2v11a3 3 0 106 0V4a2 2 0 00-2-2H4z" clip-rule="evenodd"></path>
-              <path d="M10 5a2 2 0 012-2h3a1 1 0 011 1v6a3 3 0 01-3 3H10V5z"></path>
+              <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
             </svg>
           </div>
-          <h3 class="text-5xl font-bold text-gray-900 mb-2">100</h3>
-          <h4 class="text-xl font-semibold text-gray-700 mb-2">Organizaciones</h4>
-          <p class="text-gray-600">han recibido diseños de proyectos e iniciativas para mejorar su impacto social</p>
+          <h3 class="text-5xl font-bold text-gray-900 mb-2">85%</h3>
+          <h4 class="text-xl font-semibold text-gray-700 mb-2">Crecimiento</h4>
+          <p class="text-gray-600">reportan mejora en sus habilidades de liderazgo tras mentorizar</p>
+        </div>
+      </div>
+
+      <!-- Mentor Sectors -->
+      <div class="bg-white rounded-3xl p-8 md:p-12 shadow-lg">
+        <h3 class="text-2xl font-bold text-center text-gray-900 mb-8">Sectores de nuestros mentores</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+          <div class="space-y-2">
+            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto">
+              <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <p class="text-sm font-medium text-gray-900">Tecnología</p>
+          </div>
+          <div class="space-y-2">
+            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto">
+              <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4zM18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"></path>
+              </svg>
+            </div>
+            <p class="text-sm font-medium text-gray-900">Finanzas</p>
+          </div>
+          <div class="space-y-2">
+            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto">
+              <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <p class="text-sm font-medium text-gray-900">Consultoría</p>
+          </div>
+          <div class="space-y-2">
+            <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mx-auto">
+              <svg class="w-6 h-6 text-orange-600" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <p class="text-sm font-medium text-gray-900">Energía</p>
+          </div>
         </div>
       </div>
     </div>
